@@ -36,24 +36,23 @@ namespace WebAppArticulos.Migrations
                     PrecioUnitario = table.Column<int>(type: "int", nullable: false),
                     Stock = table.Column<int>(type: "int", nullable: false),
                     Eliminado = table.Column<int>(type: "int", nullable: false),
-                    CategoriaId = table.Column<int>(type: "int", nullable: false),
-                    CategoriaId1 = table.Column<long>(type: "bigint", nullable: true)
+                    CategoriaId = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Productos", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Productos_Categorias_CategoriaId1",
-                        column: x => x.CategoriaId1,
+                        name: "FK_Productos_Categorias_CategoriaId",
+                        column: x => x.CategoriaId,
                         principalTable: "Categorias",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Productos_CategoriaId1",
+                name: "IX_Productos_CategoriaId",
                 table: "Productos",
-                column: "CategoriaId1");
+                column: "CategoriaId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

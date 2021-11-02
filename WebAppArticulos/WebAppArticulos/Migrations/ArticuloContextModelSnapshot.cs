@@ -19,7 +19,7 @@ namespace WebAppArticulos.Migrations
                 .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("WebAppArticulos.Controllers.Categoria", b =>
+            modelBuilder.Entity("WebAppArticulos.Models.Categoria", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -40,17 +40,14 @@ namespace WebAppArticulos.Migrations
                     b.ToTable("Categorias");
                 });
 
-            modelBuilder.Entity("WebAppArticulos.Controllers.Producto", b =>
+            modelBuilder.Entity("WebAppArticulos.Models.Producto", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CategoriaId")
-                        .HasColumnType("int");
-
-                    b.Property<long?>("CategoriaId1")
+                    b.Property<long>("CategoriaId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("Codigo")
@@ -79,21 +76,23 @@ namespace WebAppArticulos.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoriaId1");
+                    b.HasIndex("CategoriaId");
 
                     b.ToTable("Productos");
                 });
 
-            modelBuilder.Entity("WebAppArticulos.Controllers.Producto", b =>
+            modelBuilder.Entity("WebAppArticulos.Models.Producto", b =>
                 {
-                    b.HasOne("WebAppArticulos.Controllers.Categoria", "Categoria")
+                    b.HasOne("WebAppArticulos.Models.Categoria", "Categoria")
                         .WithMany("Productos")
-                        .HasForeignKey("CategoriaId1");
+                        .HasForeignKey("CategoriaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Categoria");
                 });
 
-            modelBuilder.Entity("WebAppArticulos.Controllers.Categoria", b =>
+            modelBuilder.Entity("WebAppArticulos.Models.Categoria", b =>
                 {
                     b.Navigation("Productos");
                 });

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebAppArticulos.Controllers
+namespace WebAppArticulos.Models
 {
     public class Producto
     {
@@ -25,7 +25,7 @@ namespace WebAppArticulos.Controllers
 
         public int Eliminado { get; set; }
 
-        public int CategoriaId { get; set; }
+        public long CategoriaId { get; set; }
 
         public Categoria Categoria { get; set; }
     }
