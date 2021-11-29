@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nJTfaWPnksQV4/R1BOnikmYwwfBCMzXRStz3Rt8M3VFMhRpOX8ArYD26BT+PZQ2VQBiNUrn9xRiL9nltFpkQ0Q==",
+  "dgSpecHash": "J5uV5kAhUKDEtoskDno5jJzVk8oK9esdsuFkAMbiyyuWgrdPabbN9iy4DFfERVsTC2OxKoPdKzshf1EOBtYpJw==",
   "success": true,
-  "projectFilePath": "C:\\Disco F\\CURSOS_MINDHUB\\senior_accenture\\WebAppArticulos\\WebAppArticulos\\WebAppArticulos.csproj",
+  "projectFilePath": "C:\\Disco F\\CURSOS_MINDHUB\\SENIOR_ACCENTURE\\WebAppArticulos\\WebAppArticulos\\WebAppArticulos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vcoro\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\vcoro\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Disco F\\CURSOS_MINDHUB\\senior_accenture\\WebAppArticulos\\WebAppArticulos\\WebAppArticulos.csproj": {}
+    "C:\\Disco F\\CURSOS_MINDHUB\\SENIOR_ACCENTURE\\WebAppArticulos\\WebAppArticulos\\WebAppArticulos.csproj": {}
   },
   "projects": {
-    "C:\\Disco F\\CURSOS_MINDHUB\\senior_accenture\\WebAppArticulos\\WebAppArticulos\\WebAppArticulos.csproj": {
+    "C:\\Disco F\\CURSOS_MINDHUB\\SENIOR_ACCENTURE\\WebAppArticulos\\WebAppArticulos\\WebAppArticulos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Disco F\\CURSOS_MINDHUB\\senior_accenture\\WebAppArticulos\\WebAppArticulos\\WebAppArticulos.csproj",
+        "projectUniqueName": "C:\\Disco F\\CURSOS_MINDHUB\\SENIOR_ACCENTURE\\WebAppArticulos\\WebAppArticulos\\WebAppArticulos.csproj",
         "projectName": "WebAppArticulos",
-        "projectPath": "C:\\Disco F\\CURSOS_MINDHUB\\senior_accenture\\WebAppArticulos\\WebAppArticulos\\WebAppArticulos.csproj",
+        "projectPath": "C:\\Disco F\\CURSOS_MINDHUB\\SENIOR_ACCENTURE\\WebAppArticulos\\WebAppArticulos\\WebAppArticulos.csproj",
         "packagesPath": "C:\\Users\\vcoro\\.nuget\\packages\\",
-        "outputPath": "C:\\Disco F\\CURSOS_MINDHUB\\senior_accenture\\WebAppArticulos\\WebAppArticulos\\obj\\",
+        "outputPath": "C:\\Disco F\\CURSOS_MINDHUB\\SENIOR_ACCENTURE\\WebAppArticulos\\WebAppArticulos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
